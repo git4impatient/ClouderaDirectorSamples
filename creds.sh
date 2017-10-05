@@ -4,6 +4,6 @@ export subnetId='subnet-7777777e'
 export securityGroupsIds='sg-2222222b'
 # you need to upload your private key .pem file and then specificy the path on the director
 # node as to where it lives
-export path2privateKey='/home/centos/.ssh/myprivatekey.pem'
+export path2privateKey='/home/centos/myprivatekey.pem'
 # start a new shell so people do not have to remember to source the file
 bash
