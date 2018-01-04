@@ -1,1 +1,1 @@
-export DATANODE=$(sudo su - hdfs -c 'hdfs dfsadmin -report | grep Hostname | sed 's/.*: //'  | tail -1')
+export DATANODE=$(sudo su - hdfs -c "hdfs dfsadmin -report | grep Hostname | sed 's/.*: //'  | tail -1")
