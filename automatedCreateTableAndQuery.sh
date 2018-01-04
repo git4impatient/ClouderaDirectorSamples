@@ -5,9 +5,10 @@
 # RESET
 # note the impala-shell will connect to localhost:21000
 #
-#  DATANODE=$(sudo su - hdfs -c 'hdfs dfsadmin -report | grep Hostname | sed 's/.*: //'  | tail -1')
+#  DATANODE=$(sudo su - hdfs -c "hdfs dfsadmin -report | grep Hostname | sed 's/.*: //'  | tail -1")
 
-impala-shell -i $DATANODE <<eoj
+#impala-shell -i $DATANODE <<eoj
+impala-shell <<eoj
 drop table if exists inpatient;
 drop table if exists inpatientsnappyparquet;
 eoj
