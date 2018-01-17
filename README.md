@@ -11,3 +11,5 @@ To make an instant cluster
 - to set up your shell variables, from the command prompt run:  ./creds.sh  
 - run:   bash go.director.bootstrap  
 - enjoy
+- find your gateway node, ssh to the gw node
+The simplist way to find the gw node is to browse to Cloudera Manager, click on the HUE service, click on the link to the HUE webUI and you will find the gw node address in the browser address line
