@@ -3,6 +3,7 @@
 
 To make an instant cluster
 - create a c4.large node in amazon
+- your firewall rules must include a line like:  All traffic / All / All /sg-yadayadYourSG123
 - sudo yum install git
 - git clone https://github.com/git4impatient/ClouderaDirectorSamples
 - run:  directorInstall.sh
