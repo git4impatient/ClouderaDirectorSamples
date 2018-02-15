@@ -7,7 +7,7 @@ To make an instant cluster
 - sudo yum install git
 - git clone https://github.com/git4impatient/ClouderaDirectorSamples
 - run:  directorInstall.sh
-- edit creds.sh and put in your keys vpc etc
+- edit creds.sh.SAMPLE and put in your keys vpc etc.  Name it creds.sh so you don't lose it on a "git pull"
 - upload your pem file and put the path to your pem file in the creds.sh
 - to set up your shell variables, from the command prompt run:  ./creds.sh  
 - run:   bash go.director.bootstrap  
