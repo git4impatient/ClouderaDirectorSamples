@@ -12,3 +12,6 @@ https://repo.continuum.io/pkgs/misc/parcels/
 #to enable anaconda
 #in cm in the parcels screen
 # Download, distribute, activate anaconda, spark2, add spark2 service
+
+# streamsets
+https://archives.streamsets.com/datacollector/latest/parcel/
