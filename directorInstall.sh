@@ -1,3 +1,12 @@
+#  (C) copyright Martin Lurie sample code not supported
+# if your environment is locked down there will be firewall issues
+# make sure the director node/creds can create ec2 instances, storage
+# and can get to ec2.us-east-1.amazonaws.com and rds.us-east-1.amazonaws.com
+# if not using rds then it won't create rds
+# 
+# to get to the archive.cloudera.com the aws nodes will need access to the internet
+# 
+#
 #install wget so we can pull down files
 sudo yum -y install wget
 # now go get the oracle jdk, the openjdk is not support
@@ -19,10 +28,6 @@ sudo systemctl stop firewalld
 sudo sed -i 's/enforcing/disabled/' /etc/selinux/config
 sudo setenforce 0
 sudo getenforce
-# firewall issues
-# make sure the director node/creds can create ec2 instances, storage
-# and can get to ec2.us-east-1.amazonaws.com and rds.us-east-1.amazonaws.com
-# if not using rds then it won't create rds
-#
+
 
 
