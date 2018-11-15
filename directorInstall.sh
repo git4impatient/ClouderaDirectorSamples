@@ -19,4 +19,10 @@ sudo systemctl stop firewalld
 sudo sed -i 's/enforcing/disabled/' /etc/selinux/config
 sudo setenforce 0
 sudo getenforce
+# firewall issues
+# make sure the director node/creds can create ec2 instances, storage
+# and can get to ec2.us-east-1.amazonaws.com and rds.us-east-1.amazonaws.com
+# if not using rds then it won't create rds
+#
+
 
