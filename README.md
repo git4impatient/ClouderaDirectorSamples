@@ -14,3 +14,7 @@ To make an instant cluster
 - enjoy
 - find your gateway node, ssh to the gw node
 The simplist way to find the gw node is to browse to Cloudera Manager, click on the HUE service, click on the link to the HUE webUI and you will find the gw node address in the browser address line
+- Debugging: some common errors to avoid
+Firewall rules must allow all nodes to see each other
+The ec2-user or centos user must have sudo without password
+If using a custom image make sure firewalld is disabled, ipv6 is disabled, selinux is disabled, and filesystems are not mounted to prevent suid, as in set-user-id as root when running scripts
